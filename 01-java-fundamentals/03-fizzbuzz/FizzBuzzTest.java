@@ -8,6 +8,9 @@ public class FizzBuzzTest {
         System.out.println(myTest.fizzBuzz(15));
         System.out.println(myTest.fizzBuzz(16));
         System.out.println(myTest.fizzBuzz(2));
-    
+        
+        for (int i = 1; i <= 50; i++) {
+            System.out.println(tester.fizzBuzz(i));
+        }
     }
 }
