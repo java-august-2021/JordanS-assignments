@@ -1,10 +1,6 @@
 
 public class Gorilla extends Mammal {
 
-    public Gorilla(){
-
-    }
-
     public Gorilla(int energyLevel){
         super(energyLevel);
     }
