@@ -11,6 +11,21 @@
 <title>Insert title here</title>
 </head>
 <body>
-	welcome to index!
+	<form action="/survey" method="POST">
+		<p>Name: <input type="text" name="name"></p>
+		<p>Location: <select name="location">
+			<option value="Online">Online</option>
+			<option value="Seattle">Seattle</option>
+			<option value="Denver">Denver</option>
+		</select></p>
+		<p>Favorite Language: <select name="favoriteLanguage">
+			<option value="Python">Python</option>
+			<option value="Java">Java</option>
+			<option value="HTML">HTML</option>
+			<option value="C++">C++</option>
+		</select></p>
+		<p>Comments:<textarea rows="10" cols="30" name="comments"></textarea></p>
+		<button>Submit!</button>
+	</form>
 </body>
 </html>
