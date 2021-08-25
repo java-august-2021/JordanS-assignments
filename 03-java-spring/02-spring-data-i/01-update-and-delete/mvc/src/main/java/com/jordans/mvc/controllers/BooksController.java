@@ -44,6 +44,13 @@ public class BooksController {
         }
     }
     
+    @RequestMapping("/books/{id}")
+    public String show(@PathVariable("id") Long id, Model model) {
+    	Book book = bookService.findBook(id);
+    	model.addAttribute("book", book);
+    	return "/books/show.jsp";
+    }
+    
     @RequestMapping("/books/{id}/edit")
     public String edit(@PathVariable("id") Long id, Model model) {
         Book book = bookService.findBook(id);
