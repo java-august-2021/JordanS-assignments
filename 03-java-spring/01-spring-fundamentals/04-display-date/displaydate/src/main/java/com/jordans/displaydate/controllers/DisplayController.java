@@ -18,7 +18,7 @@ public class DisplayController {
 	
 	@RequestMapping("/date")
 	private String displayDate(Model dateModel) {
-		String pattern = "EEEEE, dd MMMMM, yyyy";
+		String pattern = "EEEEE, 'the' dd 'of' MMMMM, yyyy";
 		SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
 		String date = simpleDateFormat.format(new Date());
 		dateModel.addAttribute("date", date);
