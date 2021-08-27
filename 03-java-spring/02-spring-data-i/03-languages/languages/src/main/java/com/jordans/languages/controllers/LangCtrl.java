@@ -73,4 +73,6 @@ public class LangCtrl {
         langService.destroyLang(id);
         return "redirect:/languages";
     }
+	
+	//test
 }
